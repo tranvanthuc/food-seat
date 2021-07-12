@@ -5,6 +5,10 @@ import App from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import 'antd/dist/antd.less';
+import 'assets/scss/utils.min.css';
+import 'assets/scss/default.scss';
+import 'assets/scss/variables.scss';
 
 ReactDOM.render(
   <React.StrictMode>

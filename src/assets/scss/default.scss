@@ -1,0 +1,19 @@
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  color: initial;
+  font-size: initial;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014,
+    0 9px 28px 8px #0000000d;
+  background-color: white;
+  z-index: 1;
+}
+
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-prev:focus,
+.ant-carousel .slick-next:focus {
+  color: initial;
+  background-color: white;
+}
