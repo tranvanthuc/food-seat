@@ -6,6 +6,9 @@ import Register from 'features/auth/Register';
 import Home from 'features/chooseTable/Home';
 import SearchTable from 'features/chooseTable/SearchTable';
 import DiningTable from 'features/chooseTable/DiningTable';
+import PageNotFound from 'features/common/PageNotFound';
+import Movie from 'features/movie/Movie';
+
 
 
 const routes = () => (
@@ -27,12 +30,16 @@ const routes = () => (
         <Login />
       </DefaultRoute>
 
+      <DefaultRoute layout={LayoutType.basic} path="/movie">
+        <Movie />
+      </DefaultRoute>
+
       <DefaultRoute layout={LayoutType.basic} path="/register">
         <Register />
       </DefaultRoute>
 
       <DefaultRoute path="*" layout={LayoutType.basic} status={404}>
-        {/* <PageNotFound /> */}
+        <PageNotFound />
       </DefaultRoute>
     </Switch>
   </Router>

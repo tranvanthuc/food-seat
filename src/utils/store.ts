@@ -1,15 +1,15 @@
 import { PayloadAction } from '@reduxjs/toolkit';
 import { DefaultState } from 'constants/store';
 
-export const defaultRequest = (state: DefaultState) => {
+export const REQUEST = (state: DefaultState) => {
   state.loading = true;
 };
 
-export const defaultSuccess = (state: DefaultState) => {
+export const SUCCESS = (state: DefaultState) => {
   state.status = true;
   state.loading = false;
 };
-export const defaultFailure = (state: DefaultState, action: PayloadAction<any>) => {
+export const FAILURE = (state: DefaultState, action: PayloadAction<any>) => {
   state.status = false;
   state.loading = false;
   state.error = action.payload;

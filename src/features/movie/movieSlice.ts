@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { DefaultState, DEFAULT_STATE } from 'constants/store';
-import { defaultFailure, defaultRequest, defaultSuccess } from 'utils/store';
+import { FAILURE, REQUEST, SUCCESS } from 'utils/store';
 
 interface Movie {
   title: string;
@@ -20,14 +20,14 @@ export const movieSlice = createSlice({
   initialState,
   reducers: {
     getListRequest(state) {
-      defaultRequest(state);
+      REQUEST(state);
     },
     getListSuccess(state, action) {
-      defaultSuccess(state);
+      SUCCESS(state);
       state.list = action.payload;
     },
     getListFailure(state, action) {
-      defaultFailure(state, action);
+      FAILURE(state, action);
     },
   },
 });

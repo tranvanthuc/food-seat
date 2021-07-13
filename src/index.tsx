@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
@@ -9,6 +8,7 @@ import 'antd/dist/antd.less';
 import 'assets/scss/utils.min.css';
 import 'assets/scss/default.scss';
 import 'assets/scss/variables.scss';
+
 
 ReactDOM.render(
   <React.StrictMode>
